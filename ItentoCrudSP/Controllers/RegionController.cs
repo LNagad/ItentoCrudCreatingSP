@@ -35,7 +35,7 @@ namespace ItentoCrudSP.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Put(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             return Ok(await _regionRepository.SPDeleteAsync(id));
         }
